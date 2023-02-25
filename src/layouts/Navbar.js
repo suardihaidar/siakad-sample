@@ -16,7 +16,7 @@ function Navbar({ children }) {
 
   const { logout } = useAuth();
 
-  const baseURL = "/siakad-sample";
+  const baseURL = "/siakad-sample#"; // remove hash(#) when deploy to other than github pages
 
   const handleSelectedMenu = (ev, title) => {
     // ev.preventDefault();
