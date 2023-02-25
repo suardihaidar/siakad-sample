@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/siakad/static/css/main.843cdeb7.css",
+    "main.js": "/siakad/static/js/main.86d4565a.js",
+    "static/js/27.ed29fe39.chunk.js": "/siakad/static/js/27.ed29fe39.chunk.js",
+    "index.html": "/siakad/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.843cdeb7.css",
+    "static/js/main.86d4565a.js"
+  ]
+}
