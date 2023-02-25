@@ -16,6 +16,8 @@ function Navbar({ children }) {
 
   const { logout } = useAuth();
 
+  const baseURL = "/siakad-sample";
+
   const handleSelectedMenu = (ev, title) => {
     // ev.preventDefault();
     console.log(title);
@@ -118,7 +120,7 @@ function Navbar({ children }) {
                         onClick={(ev) => handleSelectedMenu(ev, item.title)}
                       >
                         <a
-                          href={item.path}
+                          href={`${baseURL}${item.path}`}
                           className="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                         >
                           <span className="ml-2">{item.title}</span>
@@ -136,7 +138,7 @@ function Navbar({ children }) {
                   onClick={(ev) => handleSelectedMenu(ev, val.title)}
                 >
                   <a
-                    href={val.path}
+                    href={`${baseURL}${val.path}`}
                     className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
                   >
                     {val.icon}
