@@ -1,7 +1,7 @@
 {
   "name": "siakad",
-  "version": "0.1.0",
-  "homepage": "https://suardihaidar.github.io/siakad",
+  "version": "0.2.0",
+  "homepage": "https://suardihaidar.github.io/siakad-sample",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
