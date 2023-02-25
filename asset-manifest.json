@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/siakad/static/css/main.843cdeb7.css",
-    "main.js": "/siakad/static/js/main.86d4565a.js",
-    "static/js/27.ed29fe39.chunk.js": "/siakad/static/js/27.ed29fe39.chunk.js",
-    "index.html": "/siakad/index.html"
+    "main.css": "/siakad-sample/static/css/main.843cdeb7.css",
+    "main.js": "/siakad-sample/static/js/main.6ad36b04.js",
+    "static/js/27.ed29fe39.chunk.js": "/siakad-sample/static/js/27.ed29fe39.chunk.js",
+    "index.html": "/siakad-sample/index.html"
   },
   "entrypoints": [
     "static/css/main.843cdeb7.css",
-    "static/js/main.86d4565a.js"
+    "static/js/main.6ad36b04.js"
   ]
 }
