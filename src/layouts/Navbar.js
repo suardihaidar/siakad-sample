@@ -16,11 +16,9 @@ function Navbar({ children }) {
 
   const { logout } = useAuth();
 
-  const baseURL = "/siakad-sample#"; // remove hash(#) when deploy to other than github pages
+  const baseURL = "/siakad-sample";
 
   const handleSelectedMenu = (ev, title) => {
-    // ev.preventDefault();
-    console.log(title);
     if (isSelected !== title) {
       setIsSelected(title);
     }
