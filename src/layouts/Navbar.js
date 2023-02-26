@@ -16,7 +16,7 @@ function Navbar({ children }) {
 
   const { logout } = useAuth();
 
-  const baseURL = "/siakad-sample";
+  const baseURL = "";
 
   const handleSelectedMenu = (ev, title) => {
     if (isSelected !== title) {
