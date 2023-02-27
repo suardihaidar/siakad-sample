@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import { useAuth } from "../hooks/useAuth";
+import * as Ic from "../assets/icons";
 
 function Login() {
   const [nim, setNim] = useState("23129999");
@@ -34,6 +35,9 @@ function Login() {
       <div className="h-full flex items-center justify-center text-center">
         <div className="border-solid border rounded-md border-gray-300 w-1/4 h-auto py-9 px-5">
           <div className="p-7 pt-0 text-center">
+            <div className="flex items-center justify-center mb-3">
+              <Ic.AcademicCap className="w-14 h-14" />
+            </div>
             <p className="font-bold">SISTEM INFORMASI AKADEMIK</p>
             <p>Universitas Amir Hamzah</p>
           </div>

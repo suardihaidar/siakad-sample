@@ -1,28 +1,28 @@
-import * as HiIcons from "react-icons/hi";
+import * as Ic from "../assets/icons";
 
 export const routes = [
   {
     title: "Dashboard",
     path: "/",
-    icon: <HiIcons.HiChartPie size="2em" />,
+    icon: <Ic.ChartPie className="w-6 h-6" />,
     isMultiLevel: false,
   },
   {
     title: "Biodata",
     path: "/profile",
-    icon: <HiIcons.HiIdentification size="2em" />,
+    icon: <Ic.Identification className="w-6 h-6" />,
     isMultiLevel: false,
   },
   {
     title: "Info Kuliah",
     path: "/info-kuliah",
-    icon: <HiIcons.HiBookOpen size="2em" />,
+    icon: <Ic.BookInfo className="w-6 h-6" />,
     isMultiLevel: false,
   },
   {
     title: "Rencana dan Hasil Studi",
     path: "",
-    icon: <HiIcons.HiDocumentText size="2em" />,
+    icon: <Ic.Document className="w-6 h-6" />,
     isMultiLevel: true,
     isExpand: false,
     child: [
@@ -43,19 +43,19 @@ export const routes = [
   {
     title: "Biaya Kuliah",
     path: "/biaya-kuliah",
-    icon: <HiIcons.HiCash size="2em" />,
+    icon: <Ic.RupiahCircle className="w-6 h-6" />,
     isMultiLevel: false,
   },
   {
     title: "Materi dan Nilai",
     path: "/materi-kuliah",
-    icon: <HiIcons.HiClipboardCheck size="2em" />,
+    icon: <Ic.ClipboardCheck className="w-6 h-6" />,
     isMultiLevel: false,
   },
   {
     title: "Panduan",
     path: "/panduan",
-    icon: <HiIcons.HiBriefcase size="2em" />,
+    icon: <Ic.Briefcase className="w-6 h-6" />,
     isMultiLevel: false,
   },
 ];
