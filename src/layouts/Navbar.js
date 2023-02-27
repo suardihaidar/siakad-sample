@@ -2,9 +2,7 @@ import * as HiIcons from "react-icons/hi";
 
 import { useAuth } from "../hooks/useAuth";
 import { useSessionStorage } from "../hooks/useSessionStorage";
-
-// import { IcPie, IcPeople } from "../assets/icons/icons";
-
+import * as Ic from "../assets/icons";
 import { routes } from "../routes/sidebar";
 
 function Navbar({ children }) {
@@ -47,7 +45,7 @@ function Navbar({ children }) {
                 <HiIcons.HiMenuAlt2 size="2em" />
               </button>
               <a href="/dashboard" className="flex ml-2 md:mr-24">
-                <HiIcons.HiAcademicCap size="2em" className="mr-3" />
+                <Ic.AcademicCap className="mr-2 w-7 h-7 self-center" />
                 <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">
                   Universitas Amir Hamzah
                 </span>
@@ -75,7 +73,7 @@ function Navbar({ children }) {
       >
         <div className="h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800">
           <div className="flex flex-col items-center pb-5 border-b mb-3 border-gray-200">
-            <HiIcons.HiUserCircle size="6rem" />
+            <Ic.UserCircle className="w-24 h-24" />
             <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
               Ahmad Danial
             </h5>
@@ -98,9 +96,9 @@ function Navbar({ children }) {
                       {val.title}
                     </span>
                     {isCollapse === val.title ? (
-                      <HiIcons.HiChevronUp />
+                      <HiIcons.HiChevronUp color="#303D57" />
                     ) : (
-                      <HiIcons.HiChevronDown />
+                      <HiIcons.HiChevronDown color="#303D57" />
                     )}
                   </button>
                   <ul

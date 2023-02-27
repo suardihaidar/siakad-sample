@@ -3,31 +3,37 @@ function InfoKuliah() {
     <div>
       <div className="uppercase text-gray-400 mb-3">Info Perkuliahan</div>
       <div className="text-gray-400 mb-3">Info Perkuliahan dari Dosen</div>
-      <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-        <table class="w-full text-sm text-left text-blue-100 dark:text-blue-100">
-          <thead class="text-xs text-white uppercase bg-blue-600 dark:text-white">
+      <div className="relative overflow-x-auto sm:rounded-lg">
+        <table className="w-full text-sm text-left text-blue-100 dark:text-blue-100">
+          <thead
+            className="text-xs text-white uppercase dark:text-white"
+            style={{ backgroundColor: "#689DEA" }}
+          >
             <tr>
-              <th scope="col" class="pl-6 py-4">
+              <th scope="col" className="pl-6 py-4">
                 No.
               </th>
-              <th scope="col" class="px-6 py-4">
+              <th scope="col" className="px-6 py-4">
                 Tanggal
               </th>
-              <th scope="col" class="px-6 py-4">
+              <th scope="col" className="px-6 py-4">
                 Info Kuliah
               </th>
             </tr>
           </thead>
           <tbody>
-            <tr class="bg-blue-500 border-b border-blue-500">
+            <tr
+              className="border-b text-black"
+              style={{ backgroundColor: "#D2EBFF", borderColor: "#689DEA" }}
+            >
               <th
                 scope="row"
-                class="pl-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100"
+                className="pl-6 py-4 font-medium whitespace-nowrap"
               >
                 1
               </th>
-              <td class="px-6 py-4">12 Februari 2022</td>
-              <td class="px-6 py-4">
+              <td className="px-6 py-4">12 Februari 2022</td>
+              <td className="px-6 py-4">
                 Hari senin, mata kuliah statistika jam 09.30 diganti ke jam
                 14.00 ruangan 4.2.2
               </td>
