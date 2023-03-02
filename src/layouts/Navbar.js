@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import { useAuth } from "../hooks/useAuth";
 import { useSessionStorage } from "../hooks/useSessionStorage";
 import * as Ic from "../assets/icons";
@@ -11,6 +14,7 @@ function Navbar({ children }) {
   const [isCollapse, setIsCollapse] = useSessionStorage("isCollapse", "");
 
   const { logout } = useAuth();
+  const { pathname } = useLocation();
 
   const handleSelectedMenu = (ev, title) => {
     if (isSelected !== title) {
@@ -25,6 +29,10 @@ function Navbar({ children }) {
       setIsCollapse("");
     }
   };
+
+  useEffect(() => {
+    if (pathname === "/") return () => handleSelectedMenu("", "Dashboard");
+  });
 
   return (
     <div className="flex h-screen flex-col">
