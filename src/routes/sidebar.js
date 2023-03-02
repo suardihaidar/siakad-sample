@@ -43,7 +43,7 @@ export const routes = [
   {
     title: "Biaya Kuliah",
     path: "/biaya-kuliah",
-    icon: <Ic.RupiahCircle className="w-6 h-6" />,
+    icon: <Ic.RupiahCircle className="w-6 h-6 text-vintage-blue" />,
     isMultiLevel: false,
   },
   {

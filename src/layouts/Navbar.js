@@ -1,5 +1,3 @@
-import * as HiIcons from "react-icons/hi";
-
 import { useAuth } from "../hooks/useAuth";
 import { useSessionStorage } from "../hooks/useSessionStorage";
 import * as Ic from "../assets/icons";
@@ -42,10 +40,10 @@ function Navbar({ children }) {
                 className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               >
                 <span className="sr-only">Open sidebar</span>
-                <HiIcons.HiMenuAlt2 size="2em" />
+                <Ic.Menu className="w-7 h-7" />
               </button>
               <a href="/dashboard" className="flex ml-2 md:mr-24">
-                <Ic.AcademicCap className="mr-2 w-7 h-7 self-center" />
+                <Ic.AcademicCap className="mr-2 w-8 h-8 self-center" />
                 <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">
                   Universitas Amir Hamzah
                 </span>
@@ -96,9 +94,9 @@ function Navbar({ children }) {
                       {val.title}
                     </span>
                     {isCollapse === val.title ? (
-                      <HiIcons.HiChevronUp color="#303D57" />
+                      <Ic.ChevronUp className="w-3 h-3" />
                     ) : (
-                      <HiIcons.HiChevronDown color="#303D57" />
+                      <Ic.ChevronDown className="w-3 h-3" />
                     )}
                   </button>
                   <ul

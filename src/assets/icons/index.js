@@ -7,6 +7,12 @@ import { ReactComponent as Identification } from "./ic-identification.svg";
 import { ReactComponent as RupiahCircle } from "./ic-rupiah-circle.svg";
 import { ReactComponent as UserCircle } from "./ic-user-circle.svg";
 import { ReactComponent as AcademicCap } from "./ic-academic-cap.svg";
+import { ReactComponent as ChevronDown } from "./ic-chevron-down.svg";
+import { ReactComponent as ChevronUp } from "./ic-chevron-up.svg";
+import { ReactComponent as Menu } from "./ic-menu.svg";
+import { ReactComponent as Printer } from "./ic-printer.svg";
+import { ReactComponent as Star } from "./ic-star.svg";
+import { ReactComponent as Calendar } from "./ic-calendar.svg";
 
 export {
   ChartPie,
@@ -18,4 +24,10 @@ export {
   RupiahCircle,
   UserCircle,
   AcademicCap,
+  ChevronDown,
+  ChevronUp,
+  Menu,
+  Printer,
+  Star,
+  Calendar,
 };

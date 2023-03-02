@@ -1,4 +1,4 @@
-import { HiCash, HiDatabase, HiStar } from "react-icons/hi";
+import * as Ic from "../assets/icons";
 
 function Dashboard() {
   return (
@@ -12,33 +12,33 @@ function Dashboard() {
       </div>
       <div className="my-3 flex flex-row">
         <div
-          className="block w-full p-5 border rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 text-center"
+          className="block w-full p-5 border rounded-lg dark:bg-gray-800 dark:border-gray-700 text-center"
           style={{ backgroundColor: "#8EC1F4" }}
         >
           <div className="border-b flex flex-row items-center pb-2">
-            <HiStar color="white" />
+            <Ic.Star className="w-5 h-5 text-white" />
             <p className="text-xl text-white font-bold ml-1">IPK</p>
           </div>
           <p className="font-bold text-3xl my-3 text-white">3.5</p>
           <p className="text-sm text-white">Tetap dari semester lalu</p>
         </div>
         <div
-          className="block w-full mx-5 p-5 border rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 text-center"
+          className="block w-full mx-5 p-5 border rounded-lg dark:bg-gray-800 dark:border-gray-700 text-center"
           style={{ backgroundColor: "#A8A8E5" }}
         >
           <div className="border-b flex flex-row items-center pb-2">
-            <HiCash color="white" />
+            <Ic.RupiahCircle className="w-5 h-5 text-white" />
             <p className="text-xl text-white font-bold ml-1">Tagihan</p>
           </div>
           <p className="font-bold text-3xl my-3 text-white">Rp 5.000.000</p>
           <p className="text-sm text-white">Total tunggakan terakhir</p>
         </div>
         <div
-          className="block w-full p-5 border rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 text-center"
+          className="block w-full p-5 border rounded-lg dark:bg-gray-800 dark:border-gray-700 text-center"
           style={{ backgroundColor: "#EAB46C" }}
         >
           <div className="border-b flex flex-row items-center pb-2">
-            <HiDatabase color="white" />
+            <Ic.Calendar className="w-5 h-5 text-white" />
             <p className="text-xl text-white font-bold ml-1">Semester</p>
           </div>
           <p className="font-bold text-3xl my-3 text-white">6</p>
