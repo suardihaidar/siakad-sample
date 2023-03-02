@@ -13,6 +13,9 @@ import { ReactComponent as Menu } from "./ic-menu.svg";
 import { ReactComponent as Printer } from "./ic-printer.svg";
 import { ReactComponent as Star } from "./ic-star.svg";
 import { ReactComponent as Calendar } from "./ic-calendar.svg";
+import { ReactComponent as InfoCircle } from "./ic-info-circle.svg";
+import { ReactComponent as Plus } from "./ic-plus.svg";
+import { ReactComponent as Bin } from "./ic-bin.svg";
 
 export {
   ChartPie,
@@ -30,4 +33,7 @@ export {
   Printer,
   Star,
   Calendar,
+  InfoCircle,
+  Plus,
+  Bin,
 };
