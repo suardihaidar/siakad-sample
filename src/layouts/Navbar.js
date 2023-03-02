@@ -42,7 +42,7 @@ function Navbar({ children }) {
                 <span className="sr-only">Open sidebar</span>
                 <Ic.Menu className="w-7 h-7" />
               </button>
-              <a href="/dashboard" className="flex ml-2 md:mr-24">
+              <a href="/" className="flex ml-2 md:mr-24">
                 <Ic.AcademicCap className="mr-2 w-8 h-8 self-center" />
                 <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">
                   Universitas Amir Hamzah
