@@ -6,27 +6,24 @@ function ModalAddKRS() {
       id="addKRSModal"
       tabindex="-1"
       aria-hidden="true"
-      class="fixed top-0 left-0 right-0 z-50 items-center justify-center hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full"
+      className="fixed top-0 left-0 right-0 z-50 items-center justify-center hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full"
     >
-      <div class="relative w-full h-full max-w-3xl md:h-auto">
+      <div className="relative w-full h-full max-w-3xl md:h-auto">
         {/* <!-- Modal content --> */}
-        <form
-          action="#"
-          class="relative bg-white rounded-lg shadow dark:bg-gray-700"
-        >
+        <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
           {/* <!-- Modal header --> */}
-          <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+          <div className="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
               Tambah Mata Kuliah
             </h3>
             <button
               type="button"
-              class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+              className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
               data-modal-hide="addKRSModal"
             >
               <svg
                 aria-hidden="true"
-                class="w-5 h-5"
+                className="w-5 h-5"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +37,7 @@ function ModalAddKRS() {
             </button>
           </div>
           {/* <!-- Modal body --> */}
-          <div class="p-6 space-y-6">
+          <div className="p-6 space-y-6">
             <div className="relative overflow-x-auto sm:rounded-lg">
               <table className="w-full text-sm text-left text-blue-100 dark:text-blue-100 rounded-lg">
                 <thead
@@ -96,7 +93,7 @@ function ModalAddKRS() {
                     <td className="px-6 py-4">1335620</td>
                     <td className="px-6 py-4">Statistika</td>
                     <td className="px-8 py-4">2</td>
-                    <td className="px-8 py-4">Selasa, Jam 15.30 - 17.00</td>
+                    <td className="px-6 py-4">Selasa, Jam 15.30 - 17.00</td>
                   </tr>
                   <tr
                     className="border-b text-black"
@@ -125,29 +122,29 @@ function ModalAddKRS() {
                     <td className="px-6 py-4">1335820</td>
                     <td className="px-6 py-4">Bahasa Inggris</td>
                     <td className="px-8 py-4">2</td>
-                    <td className="px-8 py-4">Selasa, Jam 07.00 - 08.30</td>
+                    <td className="px-6 py-4">Selasa, Jam 07.00 - 08.30</td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
           {/* <!-- Modal footer --> */}
-          <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+          <div className="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
             <button
               type="button"
               data-modal-hide="addKRSModal"
-              class="text-red-700 hover:text-white border-2 border-red-700 hover:bg-red-700 font-medium rounded-lg text-sm px-5 py-2 text-center"
+              className="text-red-700 hover:text-white border-2 border-red-700 hover:bg-red-700 font-medium rounded-lg text-sm px-5 py-2 text-center"
             >
               Batal
             </button>
             <button
               data-modal-hide="addKRSModal"
-              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               Simpan
             </button>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   );

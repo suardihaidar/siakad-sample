@@ -98,7 +98,7 @@ function KRS() {
               <td className="px-6 py-4">1335620</td>
               <td className="px-6 py-4">Statistika</td>
               <td className="px-8 py-4">2</td>
-              <td className="px-8 py-4">20 Maret 2023 15:30</td>
+              <td className="px-6 py-4">20 Maret 2023 15:30</td>
             </tr>
             <tr
               className="border-b text-black"
@@ -121,7 +121,7 @@ function KRS() {
               <td className="px-6 py-4">1335820</td>
               <td className="px-6 py-4">Bahasa Inggris</td>
               <td className="px-8 py-4">2</td>
-              <td className="px-8 py-4">21 Maret 2023 15:00</td>
+              <td className="px-6 py-4">21 Maret 2023 15:00</td>
             </tr>
           </tbody>
         </table>
