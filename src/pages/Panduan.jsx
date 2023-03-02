@@ -1,8 +1,17 @@
+import * as Ic from "../assets/icons";
+
 function Panduan() {
   return (
     <div>
       <div className="uppercase text-gray-400 mb-3">Panduan</div>
       <div className="text-gray-400 mb-3">List Video Panduan</div>
+      <div
+        className="flex p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400"
+        role="alert"
+      >
+        <Ic.InfoCircle />
+        <div>List Video Panduan</div>
+      </div>
       <div className="relative overflow-x-auto sm:rounded-lg">
         <table className="w-full text-sm text-left text-blue-100 dark:text-blue-100">
           <thead
