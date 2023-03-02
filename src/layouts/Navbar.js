@@ -1,6 +1,3 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
-
 import { useAuth } from "../hooks/useAuth";
 import { useSessionStorage } from "../hooks/useSessionStorage";
 import * as Ic from "../assets/icons";
@@ -14,7 +11,6 @@ function Navbar({ children }) {
   const [isCollapse, setIsCollapse] = useSessionStorage("isCollapse", "");
 
   const { logout } = useAuth();
-  const { pathname } = useLocation();
 
   const handleSelectedMenu = (ev, title) => {
     if (isSelected !== title) {
@@ -29,10 +25,6 @@ function Navbar({ children }) {
       setIsCollapse("");
     }
   };
-
-  useEffect(() => {
-    if (pathname === "/") return () => handleSelectedMenu("", "Dashboard");
-  });
 
   return (
     <div className="flex h-screen flex-col">
@@ -50,7 +42,11 @@ function Navbar({ children }) {
                 <span className="sr-only">Open sidebar</span>
                 <Ic.Menu className="w-7 h-7" />
               </button>
-              <a href="/" className="flex ml-2 md:mr-24">
+              <a
+                href="/"
+                className="flex ml-2 md:mr-24"
+                onClick={(ev) => handleSelectedMenu(ev, "Dashboard")}
+              >
                 <Ic.AcademicCap className="mr-2 w-8 h-8 self-center" />
                 <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">
                   Universitas Amir Hamzah
